@@ -1,0 +1,116 @@
+# --- Configuración de Ventana ---
+[window]
+padding = { x = 10, y = 10 }
+dynamic_padding = true
+# Opacidad del 85% (15% de transparencia)
+opacity = 0.85
+blur = true # Activa el desenfoque si tu gestor de ventanas lo soporta
+
+# --- Configuración de Colores: Catppuccin Mocha ---
+[colors.primary]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+dim_foreground = "#7f849c"
+bright_foreground = "#cdd6f4"
+
+[colors.cursor]
+text = "#1e1e2e"
+cursor = "#f5e0dc"
+
+[colors.vi_mode_cursor]
+text = "#1e1e2e"
+cursor = "#b4befe"
+
+[colors.normal]
+black = "#45475a"
+red = "#f38ba8"
+green = "#a6e3a1"
+yellow = "#f9e2af"
+blue = "#89b4fa"
+magenta = "#f5c2e7"
+cyan = "#94e2d5"
+white = "#bac2de"
+
+[colors.bright]
+black = "#585b70"
+red = "#f38ba8"
+green = "#a6e3a1"
+yellow = "#f9e2af"
+blue = "#89b4fa"
+magenta = "#f5c2e7"
+cyan = "#94e2d5"
+white = "#a6adc8"
+
+[colors.footer_bar]
+background = "#11111b"
+foreground = "#cdd6f4"
+
+[colors.hints.start]
+background = "#f9e2af"
+
+[colors.hints.end]
+background = "#a6adc8"
+
+# --- Configuración de Fuente (Opcional) ---
+[font]
+size = 11.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+# --- SECCIÓN DE ATAJOS DE TECLADO ---
+
+[[keyboard.bindings]]
+# Copiar al portapapeles
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+# Pegar desde el portapapeles
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+# Aumentar tamaño de fuente
+key = "Equals"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+# Disminuir tamaño de fuente
+key = "Minus"
+mods = "Control"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]]
+# Restablecer tamaño de fuente
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+[[keyboard.bindings]]
+# Abrir una nueva ventana
+key = "N"
+mods = "Control|Shift"
+action = "SpawnNewInstance"
+
+[[keyboard.bindings]]
+# Entrar en Modo Vi (Navegación)
+key = "Space"
+mods = "Control|Shift"
+action = "ToggleViMode"
+
+[[keyboard.bindings]]
+# Buscar en el historial (hacia atrás)
+key = "F"
+mods = "Control|Shift"
+action = "SearchForward"
+
+[[keyboard.bindings]]
+# Limpiar el historial de la pantalla (Clear)
+key = "L"
+mods = "Control"
+chars = "\f"
